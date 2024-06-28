@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <header>
+        <h1 class="main_haeding">TIC TAC TOE</h1>
+    </header>
+    <main>
+        <section class="game-stat">
+            <section class="score">
+                <section class="x-score"> ✖️ : 0</section>
+                <section class="o-score"> ⭕ : 0</section>
+            </section>
+            <section class="turn">
+                <section class="x-turn">✖️ turn</section>
+                <section class="o-turn">⭕ turn</section>
+            </section>
+        </section>
+        <section class="grid">
+            <div class="g11 box row1 col1 diag1" onclick="addItem(0);"></div>
+            <div class="g12 box row1 col2" onclick="addItem(1);"></div>
+            <div class="g13 box row1 col3 diag2" onclick="addItem(2);"></div>
+            <div class="g21 box row2 col1" onclick="addItem(3);"></div>
+            <div class="g22 box row2 col2 diag1 diag2" onclick="addItem(4);"></div>
+            <div class="g23 box row2 col3" onclick="addItem(5);"></div>
+            <div class="g31 box row3 col1 diag2" onclick="addItem(6);"></div>
+            <div class="g32 box row3 col2" onclick="addItem(7);"></div>
+            <div class="g33 box row3 col3 diag1" onclick="addItem(8);"></div>
+        </section>
+        <section class="reset">
+            <button type="reset">RESET</button>
+        </section>
+        <section class="xo">
+            <section class="x">✖️</section>
+            <section class="o">⭕</section>
+        </section>
+    </main>
+    <footer>
+        <p>A Game by Hanuman</p>
+    </footer>
+    <script src="code.js"></script>
+</body>
+</html>
