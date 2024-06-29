@@ -13,12 +13,12 @@
     <main>
         <section class="game-stat">
             <section class="score">
-                <section class="x-score"> ✖️ : 0</section>
-                <section class="o-score"> ⭕ : 0</section>
+                <section class="x-score"> ✖️ : <span id="x-wins"></span></section>
+                <section class="o-score"> ⭕ : <span id="o-wins"></span></section>
             </section>
             <section class="turn">
-                <section class="x-turn">✖️ turn</section>
-                <section class="o-turn">⭕ turn</section>
+                <section class="x-turn" id="x-turn">✖️ turn</section>
+                <section class="o-turn" id="o-turn">⭕ turn</section>
             </section>
         </section>
         <section class="grid">
@@ -32,8 +32,9 @@
             <div class="g32 box row3 col2" onclick="addItem(7);"></div>
             <div class="g33 box row3 col3 diag1" onclick="addItem(8);"></div>
         </section>
-        <section class="reset">
-            <button type="reset">RESET</button>
+        <section class="button">
+            <button class="next-round">NEXT ROUND</button>
+            <button type="reset" class="reset">RESET</button>
         </section>
         <section class="xo">
             <section class="x">✖️</section>

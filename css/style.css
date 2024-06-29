@@ -17,7 +17,7 @@ body{
     font-family: 'Roboto',sans-serif;
     font-size: 1.5rem;
     min-height: 100vh;
-    background-color: midnightblue;
+    background-color: rgb(18, 18, 77);
 
     display: flex;
     flex-direction: column;
@@ -43,11 +43,18 @@ main{
     flex-flow:row wrap;
 }
 
+.game-stat{
+    width:17.82rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .score{
     display:flex;
     flex-flow:column nowrap;
     font-size:2.5rem;
-    width:11.5rem;
 }
 
 .x-score,.o-score{
@@ -56,6 +63,7 @@ main{
     border-radius:10px;
     padding:0.5rem;
     margin:0.5rem;
+    padding-inline: 1.5rem;
 }
 
 .turn{
@@ -81,7 +89,7 @@ main{
     display:grid;
     grid-template-columns: 9rem 9rem 9rem;
     grid-template-rows: 9rem 9rem 9rem;
-    background-color: rgba(22, 22, 209, 0.918);
+    background-color: rgba(16, 16, 129, 0.918);
     border-radius: 10px;
     padding:1rem;
 }
@@ -108,6 +116,13 @@ button{
 
 button:hover,button:focus{
     background-color:rgb(78, 126, 216);
+}
+
+.button{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .xo{
