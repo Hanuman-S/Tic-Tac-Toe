@@ -18,7 +18,7 @@ let nextRound = () =>{
 };
 nextRoundBtn.addEventListener('click',nextRound);
 
-//Adds The x or o in the div
+//Adds The x or o in the div and checks the other conditions
 let stat='x';
 let itemOnScreen=0;
 let box = document.querySelectorAll('.box');
@@ -37,11 +37,9 @@ function addItem(idx){
         }
     }
     itemOnScreen++;
-    console.log(itemOnScreen);
     let win_cond;
     if(itemOnScreen>=5 && itemOnScreen<=9){
         win_cond=wincheck();
-        console.log(win_cond);
     }
     if(itemOnScreen==9 && win_cond=='false'){
         return console.log('It was a draw');
@@ -63,7 +61,6 @@ function wincheck(){
             return 'true';
         }
     }
-    console.log('no one has won yet');
     return 'false';
 }
 
